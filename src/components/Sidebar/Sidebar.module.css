@@ -1,0 +1,13 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+  background-color: #272727;
+}
+
+.logo {
+  color: #ffffff;
+}
