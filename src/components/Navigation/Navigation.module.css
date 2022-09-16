@@ -3,3 +3,7 @@
   color: #ffffff;
   list-style: none;
 }
+
+.item {
+  line-height: 70px;
+}
