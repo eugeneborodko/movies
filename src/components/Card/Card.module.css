@@ -1,0 +1,26 @@
+.link {
+  min-width: 100%;
+}
+
+.card {
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 25px rgb(0 0 0 / 40%), 0 0 8px rgb(0 0 0 / 70%);
+}
+
+.title {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.category {
+  color: #a4a4a4;
+  line-height: 30px;
+}
