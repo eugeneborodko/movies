@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { HOME_ROUTE } from '@/constants/routes';
+import { HOME_ROUTE } from '../../constants/routes';
 import Link from 'next/link';
 import Navigation from '../Navigation/Navigation';
 import classes from './Sidebar.module.css';

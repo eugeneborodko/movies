@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import Layout from '@/components/Layout/Layout';
-import Movies from '@/components/Movies/Movies';
+import Layout from '../components/Layout/Layout';
+import Movies from '../components/Movies/Movies';
 
 const Home: NextPage = () => {
   return (

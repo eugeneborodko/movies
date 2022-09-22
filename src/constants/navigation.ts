@@ -1,6 +1,6 @@
-import Home from '@/components/Icon/icons/Home';
-import Profile from '@/components/Icon/icons/Profile';
-import Search from '@/components/Icon/icons/Search';
+import Home from '../components/Icon/icons/Home';
+import Profile from '../components/Icon/icons/Profile';
+import Search from '../components/Icon/icons/Search';
 import { HOME_ROUTE, PROFILE_ROUTE, SEARCH_ROUTE } from './routes';
 
 export const NAVIGATION = [

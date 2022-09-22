@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import { NAVIGATION } from '@/constants/navigation';
+import { NAVIGATION } from '../../constants/navigation';
 import Icon from '../Icon/Icon';
 import classes from './Navigation.module.css';
 
