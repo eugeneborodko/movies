@@ -1,24 +1,20 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import classes from './Card.module.css';
+import { HOME_ROUTE } from '../../constants/routes';
 
 interface CardProps {
   title: string;
   category: string;
+  image: string;
 }
 
-export const Card: FC<CardProps> = ({ title, category }) => {
+export const Card: FC<CardProps> = ({ title, category, image }) => {
   return (
-    <Link href="/">
+    <Link href={HOME_ROUTE}>
       <a className={classes.link}>
         <figure className={classes.card}>
-          <Image
-            src="/static/images/mock.jpg"
-            alt="mock"
-            width={260}
-            height={150}
-          />
+          <img src={image} width="260" height="150" />
           <figcaption>
             <h3 className={classes.title}>{title}</h3>
             <span className={classes.category}>{category}</span>

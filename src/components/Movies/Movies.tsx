@@ -1,23 +1,28 @@
 import { FC } from 'react';
+import { IMovie } from '../../types/Movie';
 import Card from '../Card/Card';
 import classes from './Movies.module.css';
 
 interface MoviesProps {
+  movies: IMovie[];
   title: string;
 }
 
-const Movies: FC<MoviesProps> = ({ title }) => {
+const Movies: FC<MoviesProps> = ({ movies, title }) => {
   return (
     <section className={classes.wrapper}>
       <h2 className={classes.title}>{title}</h2>
       <div className={classes.movies}>
-        {[1, 2, 3, 4, 5, 6].map((card, index) => (
-          <Card
-            key={card}
-            title={`title ${index + 1}`}
-            category={`category ${index + 1}`}
-          />
-        ))}
+        {movies?.map((movie) => {
+          return (
+            <Card
+              key={movie.id}
+              title={movie.l}
+              category={movie.q}
+              image={movie.i.imageUrl}
+            />
+          );
+        })}
       </div>
     </section>
   );
