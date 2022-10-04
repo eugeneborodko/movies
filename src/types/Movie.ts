@@ -5,4 +5,8 @@ export interface IMovie {
   l: string;
   q: string;
   i: IImage;
+  qid?: string;
+  rank?: number;
+  s?: string;
+  y?: number;
 }
